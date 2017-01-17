@@ -11,23 +11,37 @@
     <header class="page-header">
       <nav class="menu">
         <button class="menu__toggle" type="button"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Вязание на заказ</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
       </nav>
       <a class="logo" href="#">
         <img src="img/logo-mobile.svg" alt="Логотип">
       </a>
     </header>
     <main class="page-content">
-      <section class="page-content__header">
+      <div class="page-content__header">
         <h1 class="page-content__title">Милые штуки ручной работы для дома</h1>
-        <nav class="catalog-nav">
-          <a href="interior.html" class="catalog-nav__link">
-            Предметы интерьера
-          </a>
-          <a href="toys.html" class="catalog-nav__link">
-            Детские игрушки
-          </a>
-        </nav>
-      </section>
+      </div>
+      <nav class="page-content__catalog-nav">
+        <a href="interior.html">
+          Предметы <br> интерьера
+        </a>
+        <a href="toys.html">
+          Детские <br> игрушки
+        </a>
+      </nav>
       <section class="product product--week">
         <header class="product__header">
           <h2 class="product__title">Вязаные корзинки</h2>
@@ -37,19 +51,21 @@
         Доступны в шести расцветках, и трех размерах.</p>
         <table class="product__properties">
           <tr>
-            <td class="product__properties-field">Цвет</td>
+            <td class="product__properties-field">Цвет:</td>
             <td class="product__properties-value">"Тиффани/Серый"</td>
           </tr>
           <tr>
-            <td class="product__properties-field">Диаметр</td>
+            <td class="product__properties-field">Диаметр:</td>
             <td class="product__properties-value">25 см</td>
           </tr>
           <tr>
-            <td class="product__properties-field">Высота</td>
+            <td class="product__properties-field">Высота:</td>
             <td class="product__properties-value">15 см</td>
           </tr>
         </table>
-        <div class="product__image"></div>
+        <div class="product__image">
+          <img src="img/triple-set-mobile@1x.jpg" alt="Продукт недели">
+        </div>
         <p class="product__price">Цена: <span>990 руб.</span></p>
         <a class="btn" href="#">Заказать</a>
       </section>
@@ -59,7 +75,7 @@
           <h3 class="features__title">Экологически чистые материалы</h3>
         </div>
         <div class="features__item">
-          <h3 class="features__title">Скандинавский стиль по российской ценой</h3>
+          <h3 class="features__title">Скандинавский стиль по российской цене</h3>
         </div>
         <div class="features__item">
           <h3 class="features__title">Увеличивает лайки на фотографиях</h3>
@@ -89,8 +105,8 @@
           </div>
         </div>
         <div class="reviews__controls">
-          <a class="reviews__toggle reviews__toggle--previous" href="#"></a>
-          <a class="reviews__toggle" href="#"></a>
+          <a class="reviews__toggle reviews__toggle--previous" href="#">туда</a>
+          <a class="reviews__toggle" href="#">сюда</a>
         </div>
         <a class="btn" href="#">Написать</a>
       </section>

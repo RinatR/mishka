@@ -1,6 +1,69 @@
-
 .product {
+  display: flex;
+  flex-direction: column;
+
   &--week {
     .add-margin();
+    padding: 33px 0;
+    background-image: url("../img/zigzag.png");
+    background-repeat: repeat-x;
+    background-position: center bottom;
+
+    .product__title {
+      font-size: @font-size-base--biggest;
+      line-height: 30px;
+      font-weight: bold;
+    }
+
+    .product__label {
+      display: block;
+      margin-bottom: 26px;
+      font-size: @font-size-base--bigger;
+      font-weight: bold;
+      color: @bg-color-green;
+      text-transform: uppercase;
+    }
+
+    .product__description {
+      margin-bottom: 26px;
+      font-size: @font-size-base;
+      line-height: @line-height-base;
+      color: @text-color-secondary;
+    }
+
+    .product__properties {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 28px;
+      font-size: @font-size-base;
+      line-height: 20px;
+      color: @text-color-secondary;
+
+      tr {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 14px 0;
+        border-bottom: 1px solid #ececec;
+      }
+    }
+
+    .product__image {
+      margin-bottom: 26px;
+    }
+
+    .product__price {
+      margin-bottom: 26px;
+      font-size: @font-size-base--bigger;
+      line-height: @line-height-base;
+      font-weight: bold;
+      text-align: center;
+      color: @text-color-secondary;
+    }
   }
 }
+
+
