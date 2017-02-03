@@ -5,9 +5,8 @@
   }
 
   .btn {
-    .add-margin();
-    margin-bottom: 39px;
-    margin-top: 39px;
+    width: 260px;
+    margin: 0 auto;
   }
 }
 
@@ -40,4 +39,34 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-clip: border-box;
+}
+
+@media @tablet-width {
+  .contacts {
+    .section-header {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    .btn {
+      width: 230px;
+    }
+  }
+
+  .contacts__inner {
+    display: flex;
+    flex-direction: column;
+    .add-margin(50px);
+  }
+
+  .contacts__info {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .contacts__row {
+    width: 50%;
+  }
+
+
 }

@@ -13,3 +13,20 @@
   font-size: @font-size-base--bigger;
   font-weight: bold;
 }
+
+@media @tablet-width {
+
+  .features {
+    .add-margin(0);
+    margin: 0 50px;
+  }
+  .features__inner {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  .features__item {
+    width: 50%;
+  }
+}
