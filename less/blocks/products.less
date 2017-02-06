@@ -1,0 +1,19 @@
+.products {
+  .add-margin();
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  @media @tablet-width {
+    flex-direction: row;
+  }
+}
+
+.product__content {
+  padding: 30px;
+  border: 1px solid lightgray;
+  border-top: none;
+}
