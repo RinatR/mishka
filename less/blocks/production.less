@@ -1,6 +1,13 @@
 .production {
   .add-margin();
   margin-bottom: 58px;
+
+  @media @tablet-width {
+    display: flex;
+    flex-direction: column;
+    .add-margin(50px);
+    margin-bottom: 63px;
+  }
 }
 
 .production__header {
@@ -13,6 +20,7 @@
 
   svg {
     margin-left: 34px;
+    vertical-align: middle;
   }
 }
 
@@ -21,6 +29,10 @@
   font-size: @font-size-base--bigger;
   line-height: @line-height-base;
   font-weight: bold;
+
+  @media @tablet-width {
+    font-size: 20px;
+  }
 }
 
 .production__player {
@@ -32,21 +44,35 @@
     left: 50%;
     transform: translate(-50%,-50%);
   }
+
+  @media @tablet-width {
+    order: -1;
+    height: 455px;
+  }
 }
 
 .production__inner {
   padding: 30px 34px;
   border: 1px solid #ececec;
   border-top: none;
+
   p {
     margin-bottom: 30px;
     font-size: 13px;
     line-height: @line-height-base;
     color: @text-color-secondary;
+
+    @media @tablet-width {
+      font-size: 15px;
+    }
   }
 
   .btn {
     width: 192px;
+
+    @media @tablet-width {
+      width: 100%;
+    }
 
   }
 }
