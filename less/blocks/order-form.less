@@ -6,6 +6,18 @@
   .btn {
     width: 100%;
     background-color: transparent;
+
+    @media @tablet-width {
+      width: 230px;
+      margin-left: 50px;
+    }
+  }
+
+  @media @tablet-width {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
@@ -41,6 +53,21 @@
         }
       }
     }
+
+    &--tel,
+    &--mail {
+      .order-form__group {
+        width: 500px;
+      }
+    }
+
+    &--tel {
+      padding-bottom: 24px;
+    }
+
+    &--mail {
+      padding-top: 0;
+    }
   }
 
   &--personal {
@@ -59,21 +86,20 @@
     }
 
     .order-form__input {
-      width: 100%;
-      margin-left: 25px;
-    }
-  }
-
-  &--tel,
-  &--mail {
-    .order-form__group {
-      width: 500px;
+      @media @tablet-width {
+        width: 100%;
+        margin-left: 25px;
+      }
     }
   }
 
   &:last-of-type {
     margin-bottom: 18px;
     background-color: transparent;
+
+    @media @tablet-width {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -288,6 +314,11 @@ input[type="email"] {
   box-sizing: border-box;
   background-color: transparent;
   resize: none;
+
+  @media @tablet-width {
+    width: 500px;
+    font-size: 19px;
+  }
 }
 
 .order-form__legend {
@@ -296,6 +327,15 @@ input[type="email"] {
   font-size: 14px;
   line-height: 16px;
   color: @text-color-secondary;
+
+  @media @tablet-width {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: 50px;
+    order: 2;
+    font-size: @font-size-base--bigger;
+    line-height: 30px;
+  }
 }
 
 
