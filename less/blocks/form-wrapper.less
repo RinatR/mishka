@@ -1,10 +1,20 @@
 .form-wrapper {
   .add-margin();
+
+  @media @tablet-width {
+    .add-margin(0px);
+  }
 }
 
 .form-wrapper__text {
   margin-bottom: 30px;
   font-size: 13px;
   line-height: @line-height-base;
-  color: @text-color-base;
+  color: @text-color-secondary;
+
+  @media @tablet-width {
+    padding: 0 50px;
+    font-size: @font-size-base--bigger;
+    line-height: 30px;
+  }
 }
