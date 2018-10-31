@@ -1,0 +1,22 @@
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-width {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media @desktop-width {
+    width: 1150px;
+    margin: 0 auto;
+  }
+}
+
+.add-margin(@value:30px) {
+  margin: 0 @value;
+}
+
+.container(@params) when (@params = "tablet") {
+  width: 668px;
+}
