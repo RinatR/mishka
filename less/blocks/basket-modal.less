@@ -15,6 +15,11 @@
   &--active {
     display: block;
   }
+
+  @media @tablet-width {
+    width: 566px;
+    padding: 51px 108px 46px 108px;
+  }
 }
 
 .basket-modal__title {
@@ -22,6 +27,11 @@
   font-size: @font-size-base--biggest;
   line-height: 30px;
   font-weight: bold;
+
+  @media @tablet-width {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
 }
 
 .basket-modal__subtitle {
@@ -54,6 +64,10 @@
 
   &--checked {
     border-color: @bg-color-green;
+  }
+
+  @media @tablet-width {
+    width: 112px;
   }
 
 }
