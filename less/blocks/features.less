@@ -3,6 +3,7 @@
   flex-direction: column;
   .add-margin();
   padding-top: 33px;
+  margin-bottom: 61px;
 
   @media @tablet-width {
     .add-margin(50px);
@@ -28,8 +29,13 @@
 .features__item {
   margin-bottom: 30px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media @tablet-width {
     width: 50%;
+    margin-bottom: 60px;
   }
 }
 
@@ -46,8 +52,10 @@
 .features__inner {
   @media @tablet-width {
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }
 

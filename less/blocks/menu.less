@@ -13,6 +13,19 @@
   @media @tablet-width {
     top: 0;
   }
+
+  @media @desktop-width {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.menu__item {
+  @media @desktop-width {
+
+  }
 }
 
 .menu__item {
@@ -147,11 +160,14 @@
         box-shadow: 0 6px 0 #000000, 0 12px 0 #000000;
       }
     }
+
+    .menu__list {
+      display: none;
+    }
   }
 
   &--opened {
     .menu__toggle {
-
       &:before {
         position: absolute;
         content: "";

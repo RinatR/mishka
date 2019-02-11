@@ -1,8 +1,8 @@
 .basket-modal {
-  position: absolute;
+  position: fixed;
   left: 50%;
-  top: 1046px;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: none;
   .container();
   padding: 36px 30px 46px 30px;
@@ -11,6 +11,7 @@
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   border: 1px solid #c6c6c6;
   background-color: #ffffff;
+  z-index: 100;
 
   &--active {
     display: block;
@@ -20,6 +21,14 @@
     width: 566px;
     padding: 51px 108px 46px 108px;
   }
+
+  &:target {
+    display: block;
+  }
+}
+
+.basket-modal:target + .modal-overlay {
+  display: block;
 }
 
 .basket-modal__title {
