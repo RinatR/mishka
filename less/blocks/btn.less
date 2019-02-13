@@ -10,13 +10,33 @@
   border: 2px solid @text-color-secondary;
   box-sizing: border-box;
   outline: none;
+
+  &--order {
+    width: 259px;
+
+  }
+
+  &--basket {
+    width: 100%;
+    background-color: @bg-color-green;
+    border: none;
+    color: #ffffff;
+  }
+
+  &--contacts {
+    width: 260px;
+    margin: 0 auto;
+  }
 }
 
-.btn--basket {
-  width: 100%;
-  background-color: @bg-color-green;
-  border: none;
-  color: #ffffff;
+@media @tablet-width {
+  .btn {
+    &--order {
+      width: 292px;
+    }
+
+    &--contacts {
+      width: 230px;
+    }
+  }
 }
-
-
