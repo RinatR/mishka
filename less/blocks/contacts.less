@@ -9,11 +9,6 @@
   }
 }
 
-.contacts__inner {
-  margin: 0 30px;
-}
-
-
 .contacts__info {
   margin-bottom: 36px;
   font-size: @font-size-base;
@@ -67,8 +62,6 @@
     .section-header {
       position: relative;
       margin-bottom: 65px;
-      font-size: 43px;
-      line-height: 50px;
       order: -2;
 
       svg {
@@ -128,6 +121,43 @@
       background-image: url("../img/map-tablet@1x.jpg");
       z-index: -1;
     }
+  }
+}
+
+@media @desktop-width {
+  .contacts {
+    position: relative;
+    padding-left: 175px;
+    margin-bottom: 105px;
+
+    .section-header {
+      svg {
+        left: -64px;
+        top: 50%;
+      }
+    }
+  }
+
+  .contacts__info {
+    flex-direction: column;
+    margin-bottom: 84px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 525px;
+    height: 457px;
+    margin-bottom: 0;
+    background-image: url("../img/map-desktop@1x.jpg");
+    &:before {
+      display: none;
+    }
+  }
+
+  .contacts__row {
+    margin-bottom: 60px;
   }
 }
 

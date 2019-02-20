@@ -1,16 +1,18 @@
 .production {
-  .add-margin();
   margin-bottom: 58px;
 
   @media @tablet-width {
     display: flex;
     flex-direction: column;
-    .add-margin(50px);
     margin-bottom: 63px;
   }
 
   @media @desktop-width {
     position: relative;
+    border: 1px solid #ececec;
+    margin: 0 50px;
+    padding-left: 0;
+    margin-bottom: 105px;
   }
 }
 

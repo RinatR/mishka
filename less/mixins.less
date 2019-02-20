@@ -13,10 +13,8 @@
   }
 }
 
-.add-margin(@value:30px) {
-  margin: 0 @value;
+
+.container(@params) when (@params = "desktop") {
+  width: 1150px;
 }
 
-.container(@params) when (@params = "tablet") {
-  width: 668px;
-}

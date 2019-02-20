@@ -58,25 +58,29 @@
 
 @media @tablet-width {
 
-  .page-content {
-    margin: 0 50px;
-  }
-
   .page-content__header {
     position: relative;
     padding-top: 161px;
-    margin-bottom: 341px;
-    background-image: none;
-    &:before {
-      position: absolute;
-      top: 0;
-      left: -50px;
-      width: 768px;
-      height: 746px;
-      background-image: url("../img/hero-desktop@1x.jpg");
-      background-position: 50% 0;
-      content: "";
-      z-index: -1;
+    padding-bottom: 350px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+
+    &--catalog,
+    &--form {
+      padding-top: 106px;
+      padding-bottom: 66px;
+      margin-bottom: 79px;
+      background-image: none;
+
+      &:after {
+        position: absolute;
+        bottom: -10px;
+        left: 0px;
+        width: 768px-1;
+        height: 24px;
+        background-image: url("../img/zigzag-fill-tablet.png");
+        content: "";
+      }
     }
   }
 
@@ -84,11 +88,16 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+
   .page-content__catalog-nav {
+    position: relative;
     flex-direction: row;
+    margin-right: 50px;
+    margin-left: 50px;
 
     a {
-      flex-grow: 1;
+      width: 50%;
 
       &:first-child {
         background-position: 257px 50%;
@@ -97,16 +106,49 @@
         background-position: 240px 50%;
       }
     }
+
+    &:after {
+      position: absolute;
+      bottom: -10px;
+      left: -50px;
+      width: 768px;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-tablet.png");
+      content: "";
+    }
   }
 }
 
 @media @desktop-width {
 
-  .page-content {
-    margin: 0 100px;
-  }
-  .page-content__catalog-nav {
+  .page-content__header {
+    background-image: url("../img/hero-desktop.jpg");
 
+    &--catalog,
+    &--form {
+      background-image: none;
+
+       &:after {
+        position: absolute;
+        bottom: -10px;
+        left: 0px;
+        width: 1150px;
+        height: 34px;
+        background-image: url("../img/zigzag-fill-desktop.png");
+        content: "";
+      }
+    }
+  }
+
+  .page-content__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-content__catalog-nav {
+    margin-bottom: 134px;
+    margin-right: 100px;
+    margin-left: 100px;
     a {
       &:first-child {
         background-position: 448px 50%;
@@ -114,6 +156,14 @@
       &:last-child {
         background-position: 430px 50%;
       }
+    }
+
+    &:after {
+      left: -50px;
+      width: 1150px;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-desktop.png");
+      content: "";
     }
   }
 }

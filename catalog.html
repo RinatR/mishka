@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="page-wrapper">
+  <div class="page-wrapper page-wrapper--catalog">
     <header class="page-header">
-      <nav class="menu menu--closed">
+      <nav class="menu menu--opened">
         <button class="menu__toggle" type="button"> </button>
         <ul class="menu__list">
           <li class="menu__item">
@@ -40,11 +40,11 @@
         </picture>
       </a>
     </header>
-    <main class="page-content">
+    <main class="page-content page-content--catalog">
       <section class="page-content__header page-content__header--catalog">
         <h1 class="page-content__title">Каталог товаров</h1>
       </section>
-      <section class="products">
+      <section class="section products">
         <article class="product">
           <a class="product__image" href="#">
             <picture>
@@ -108,71 +108,8 @@
             </div>
           </div>
         </article>
-       <!--  <article class="product">
-          <a class="product__image" href="#">
-            <picture>
-              <source media="(min-width:1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-              <source media="(min-width:768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-              <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзина для игрушек">
-            </picture>
-          </a>
-          <div class="product__content">
-            <a class="product__title" href="#">Большая корзина для игрушек</a>
-            <p class="product__properties">Диаметр 30 см, высота 30 см</p>
-            <div class="product__price-inner">
-              <p class="product__price">1500 руб.</p>
-              <a class="product__btn" href="#">
-                <svg width="20" height="18">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </article>
-        <article class="product">
-          <a class="product__image" href="#">
-            <picture>
-              <source media="(min-width:1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-              <source media="(min-width:768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-              <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзина для игрушек">
-            </picture>
-          </a>
-          <div class="product__content">
-            <a class="product__title" href="#">Большая корзина для игрушек</a>
-            <p class="product__properties">Диаметр 30 см, высота 30 см</p>
-            <div class="product__price-inner">
-              <p class="product__price">1500 руб.</p>
-              <a class="product__btn" href="#">
-                <svg width="20" height="18">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </article>
-        <article class="product">
-          <a class="product__image" href="#">
-            <picture>
-              <source media="(min-width:1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-              <source media="(min-width:768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-              <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзина для игрушек">
-            </picture>
-          </a>
-          <div class="product__content">
-            <a class="product__title" href="#">Большая корзина для игрушек</a>
-            <p class="product__properties">Диаметр 30 см, высота 30 см</p>
-            <div class="product__price-inner">
-              <p class="product__price">1500 руб.</p>
-              <a class="product__btn" href="#">
-                <svg width="20" height="18">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </article> -->
       </section>
-      <section class="production">
+      <section class="section production">
         <header class="production__header">
           <svg width="32" height="32">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video"></use>
@@ -196,8 +133,8 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="logo">
+    <footer class="page-footer page-footer--catalog">
+      <div class="logo logo--footer">
         <img src="img/logo-footer.svg" alt="Логотип">
       </div>
       <div class="socials">
@@ -263,7 +200,7 @@
       <rect y="12" fill="#231F20" width="19.958" height="2"/>
     </symbol>
     <symbol id="icon-search" viewBox="-0.8 -0.8 17.6 17.6">
-      <path fill="#231F20" opacity="0.3" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+      <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
     </symbol>
   </svg>
 </body>

@@ -4,21 +4,41 @@
   height: 35px;
   margin: 0 auto;
 
-  @media @tablet-width {
+  &--footer {
+    display: none;
+  }
+}
+
+@media @tablet-width {
+  .logo {
     width: 113px;
     height: 46px;
     margin: 0;
-  }
+    order: -1;
 
-  @media @desktop-width {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 148px;
-    height: 73px;
+    &--footer {
+      display: block;
+    }
   }
 }
+
+
+@media @desktop-width {
+  .logo {
+    width: 148px;
+    height: 73px;
+    margin-left: auto;
+    margin-right: 101px;
+
+    &--footer {
+      width: 102px;
+      height: 34px;
+      margin: 0;
+    }
+  }
+}
+
+
 
 
 

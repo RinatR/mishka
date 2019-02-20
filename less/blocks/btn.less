@@ -27,6 +27,11 @@
     width: 260px;
     margin: 0 auto;
   }
+
+  &--form {
+    width: 100%;
+    background-color: #ffffff;
+  }
 }
 
 @media @tablet-width {
@@ -38,5 +43,27 @@
     &--contacts {
       width: 230px;
     }
+
+    &--form {
+      position: absolute;
+      left: -167px;
+      bottom: -70px;
+      width: 230px;
+    }
   }
+}
+
+@media @desktop-width {
+  .btn {
+    &--contacts {
+      margin: 0;
+    }
+
+    &--form {
+      width: 230px;
+      background-color: #ffffff;
+    }
+  }
+
+
 }

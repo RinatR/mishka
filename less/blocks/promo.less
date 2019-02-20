@@ -1,3 +1,18 @@
+.promo {
+  position: relative;
+  margin-bottom: 76px;
+
+  &:after {
+    position: absolute;
+    bottom: -35px;
+    left: -30px;
+    width: 320px;
+    height: 7px;
+    background-image: url("../img/zigzag-line-mobile.png");
+    content: "";
+  }
+}
+
 .promo__description {
   margin-bottom: 34px;
   font-size: @font-size-base;
@@ -39,12 +54,38 @@
 @media @tablet-width {
   .promo {
     position: relative;
+    margin-bottom: 128px;
+
+    &:after {
+      position: absolute;
+      bottom: -52px;
+      left: -50px;
+      width: 768px;
+      height: 17px;
+      background-image: url("../img/zigzag-line-tablet.png");
+      content: "";
+    }
   }
 
   .promo__header {
     .section-header {
+      position: relative;
       font-size: 43px;
       line-height: 50px;
+
+      &:after {
+        position: absolute;
+        right: 27px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 70px;
+        font-size: 17px;
+        line-height: 17px;
+        color: #63d1bb;
+        text-align: center;
+        text-transform: uppercase;
+        content: "Товар недели";
+      }
     }
   }
 
@@ -55,7 +96,13 @@
   }
 
   .promo__description {
+    font-size: @font-size-base--bigger;
     line-height: 30px;
+  }
+
+  .promo__price {
+    font-size: 20px;
+    line-height: @line-height-base;
   }
 
   .promo__image {
@@ -63,5 +110,49 @@
     top: 80px;
     right: 0;
     width: 50%;
+  }
+}
+
+@media @desktop-width {
+  .promo {
+    margin-bottom: 166px;
+
+    &:after {
+      position: absolute;
+      bottom: -73px;
+      left: 0;
+      width: 1050px;
+      height: 23px;
+      background-image: url("../img/zigzag-line-desktop.png");
+      content: "";
+    }
+  }
+
+  .promo__header {
+    .section-header {
+      font-size: 53px;
+      line-height: 57px;
+
+      &:after {
+        left: -128px;
+      }
+    }
+  }
+
+  .promo__description {
+    margin-bottom: 67px;
+  }
+
+  .promo__properties {
+    margin-bottom: 127px;
+  }
+
+  .promo__price {
+    margin-bottom: 34px;
+  }
+
+  .promo__image {
+    top: -5px;
+    z-index: -1;
   }
 }

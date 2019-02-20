@@ -1,9 +1,5 @@
 .form-wrapper {
-  .add-margin();
-
-  @media @tablet-width {
-    .add-margin(0px);
-  }
+  margin: 0 30px;
 }
 
 .form-wrapper__text {
@@ -16,5 +12,25 @@
     padding: 0 50px;
     font-size: @font-size-base--bigger;
     line-height: 30px;
+  }
+
+  @media @desktop-width {
+    width: 700px;
+    margin-left: 218px;
+    padding: 0;
+  }
+}
+
+
+@media @tablet-width {
+  .form-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media @desktop-width {
+  .form-wrapper {
+    width: 100%;
   }
 }

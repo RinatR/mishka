@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="page-wrapper">
+  <div class="page-wrapper page-wrapper--form">
     <header class="page-header">
-      <nav class="menu menu--closed">
+      <nav class="menu menu--opened">
         <button class="menu__toggle" type="button"> </button>
         <ul class="menu__list">
           <li class="menu__item">
@@ -49,7 +49,7 @@
         Заполните простую форму заказа и мы свяжемся с Вами, чтобы уточнить детали.
         </p>
         <form class="order-form" method="post" action="/echo">
-          <div class="order-form__block">
+          <div class="order-form__block order-form__block--type">
             <h2 class="order-form__title">Тип</h2>
             <div class="order-form__inner">
               <div class="order-form__group">
@@ -62,7 +62,7 @@
               </div>
             </div>
           </div>
-          <div class="order-form__block">
+          <div class="order-form__block order-form__block--color">
             <h2 class="order-form__title">Цвет</h2>
             <div class="order-form__inner">
               <div class="order-form__group">
@@ -91,7 +91,7 @@
               </div>
             </div>
           </div>
-          <div class="order-form__block order-form__block--personal">
+          <div class="order-form__block order-form__block--fio">
             <h2 class="order-form__title">Фио</h2>
             <div class="order-form__inner">
               <div class="order-form__group">
@@ -114,24 +114,26 @@
               <input class="order-form__input" type="tel" id="phone" value="+7 XXX XX XX*" required>
             </div>
           </div>
-          <div class="order-form__block order-form__block--mail">
+          <div class="order-form__block order-form__block--email">
             <h2 class="order-form__title">E-mail</h2>
             <div class="order-form__group">
               <input class="order-form__input" type="email" id="email" placeholder="Ваш Email*" required>
             </div>
           </div>
-          <div class="order-form__block">
+          <div class="order-form__block order-form__block--additional">
             <h2 class="order-form__title">Доп</h2>
-            <textarea class="order-form__textarea" name="descripton" id="descripton" cols="30" rows="10"
-            placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="order-form__inner">
+              <textarea class="order-form__textarea" name="descripton" id="descripton" cols="30" rows="10"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <span class="order-form__legend">*Поля обязательны для заполнения</span>
+              <input class="btn btn--form" type="submit" value="Отправить заказ">
+            </div>
           </div>
-          <span class="order-form__legend">*Поля обязательны для заполнения</span>
-          <input class="btn" type="submit" value="Отправить заказ">
         </form>
       </div>
     </main>
-    <footer class="page-footer">
-      <div class="logo">
+    <footer class="page-footer page-footer--form">
+      <div class="logo logo--footer">
         <img src="img/logo-footer.svg" alt="Логотип">
       </div>
       <div class="socials">
